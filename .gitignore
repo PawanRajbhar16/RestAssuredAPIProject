@@ -1,0 +1,40 @@
+# Maven
+target/
+
+# Java
+*.class
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Reports
+test-output/
+surefire-reports/
+allure-results/
+allure-report/
+extent-report/
+cucumber-reports/
+target/jsonReports/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Drivers
+drivers/
+*.exe
+
+// Ignore txt logs
+logging.txt
