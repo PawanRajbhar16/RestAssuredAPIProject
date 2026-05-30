@@ -21,3 +21,12 @@ Given Delete PlacePayload
 When user call "deletePlaceAPI" with "post" https request
 Then the API call got success with status code 200
 And "status" in response body is "OK"
+
+Scenario: Verify inquiry and deletion of place details
+Given Valid Place id is available
+When user call "getPlaceAPI" with "get" http request
+Then the API call got success with status code 404
+And "msg" in response body is "Get operation failed, looks like place_id  doesn't exists"
+When user call "getPlaceAPI" with "get" http request
+Then the API call got success with status code 404
+And "msg" in response body is "Get operation failed, looks like place_id  doesn't exists"
